@@ -91,6 +91,96 @@ const data = [
     lastModification: "2024/02/19",
     isChecked: true,
   },
+  {
+    id: "13",
+    name: "PUBG Mobile.ipa",
+    size: "12.30 MB",
+    status: "80%",
+    timeLeft: "45 minutes",
+    lastModification: "2024/02/26",
+    isChecked: false,
+  },
+  {
+    id: "14",
+    name: "Roblox.app",
+    size: "10.50 MB",
+    status: "30%",
+    timeLeft: "3 hours",
+    lastModification: "2024/02/15",
+    isChecked: true,
+  },
+  {
+    id: "15",
+    name: "Zelda.apk",
+    size: "15.20 MB",
+    status: "70%",
+    timeLeft: "1 hour",
+    lastModification: "2024/02/17",
+    isChecked: false,
+  },
+  {
+    id: "16",
+    name: "Genshin Impact.exe",
+    size: "20.00 MB",
+    status: "Complete",
+    timeLeft: "N/A",
+    lastModification: "2024/02/20",
+    isChecked: true,
+  },
+  {
+    id: "17",
+    name: "Sonic Dash.ipa",
+    size: "6.80 MB",
+    status: "45%",
+    timeLeft: "2 hours",
+    lastModification: "2024/02/24",
+    isChecked: false,
+  },
+  {
+    id: "18",
+    name: "Need for Speed.app",
+    size: "18.50 MB",
+    status: "10%",
+    timeLeft: "5 hours",
+    lastModification: "2024/02/13",
+    isChecked: true,
+  },
+  {
+    id: "19",
+    name: "GTA San Andreas.apk",
+    size: "25.60 MB",
+    status: "60%",
+    timeLeft: "2 hours",
+    lastModification: "2024/02/21",
+    isChecked: false,
+  },
+  {
+    id: "20",
+    name: "Assassin's Creed.exe",
+    size: "30.00 MB",
+    status: "Complete",
+    timeLeft: "N/A",
+    lastModification: "2024/02/18",
+    isChecked: true,
+  },
+  {
+    id: "21",
+    name: "Call of Duty.ipa",
+    size: "22.30 MB",
+    status: "75%",
+    timeLeft: "1 hour",
+    lastModification: "2024/02/23",
+    isChecked: false,
+  },
+  {
+    id: "22",
+    name: "Fruit Ninja.app",
+    size: "8.70 MB",
+    status: "20%",
+    timeLeft: "4 hours",
+    lastModification: "2024/02/16",
+    isChecked: true,
+  },
 ];
 
 export default function QueList() {
@@ -101,7 +191,6 @@ export default function QueList() {
     } else {
       let percentage = parseFloat(status);
       console.log(percentage);
-      // Ensure percentage is within 0 to 100 range
       percentage = Math.min(100, Math.max(0, percentage));
 
       return (
@@ -131,7 +220,7 @@ export default function QueList() {
   };
 
   return (
-    <main className="text-xl overflow-x-auto">
+    <main className="text-xl overflow-x-auto max-h-[700px]">
       <table className="w-full table-auto">
         <thead className="text-left">
           <tr>
