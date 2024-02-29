@@ -3,7 +3,7 @@ import React from "react";
 export default function LeftHeader() {
   return (
     <header className="">
-      <nav className="flex gap-10 items-center mt-8">
+      <nav className="flex flex-wrap gap-10 items-center mt-8">
         <div className="relative flex items-center">
           <input type="text" className="bg-gray-200/30 px-11 py-2 rounded-lg" placeholder="Add Url" />
           <i className="absolute left-3 fa fa-solid fa-link"></i>

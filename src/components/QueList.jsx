@@ -131,14 +131,14 @@ export default function QueList() {
   };
 
   return (
-    <main className=" text-xl">
+    <main className="text-xl overflow-x-auto">
       <table className="w-full table-auto">
-        <thead className=" text-left">
+        <thead className="text-left">
           <tr>
             <th className="px-4 py-2">
               <input onClick={handleToggleAll} type="checkbox" className="form-checkbox" />
             </th>
-            <th className="px-4 py-2 ">Name</th>
+            <th className="px-4 py-2">Name</th>
             <th className="px-4 py-2">Size</th>
             <th className="px-4 py-2">Status</th>
             <th className="px-4 py-2">Time Left</th>

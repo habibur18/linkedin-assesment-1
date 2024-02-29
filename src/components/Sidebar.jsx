@@ -9,7 +9,7 @@ export default function Sidebar() {
   };
 
   return (
-    <aside className="col-span-2 mt-10 space-y-4">
+    <aside className="col-span-12 lg:col-span-2 mt-10 space-y-4">
       <div>
         <div>
           <motion.h3 className="space-x-5 text-xl flex items-center cursor-pointer" onClick={toggleAccordion} initial={false} animate={{ borderRadius: isOpen ? "0.375rem" : "1rem" }} whileHover={{ backgroundColor: "#e5e7eb", color: "black", padding: "0.5rem" }} whileTap={{ scale: 0.95 }}>

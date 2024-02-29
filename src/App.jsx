@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "./App.css";
 import Header from "./components/Header";
-import LeftSide from "./components/LeftSide";
+import RightSide from "./components/RightSide";
 import Sidebar from "./components/Sidebar";
 
 function App() {
@@ -13,7 +13,7 @@ function App() {
       <div className="bg-white/50 w-full h-[2px] mt-8"></div>
       <div className="grid grid-cols-12 gap-12">
         <Sidebar />
-        <LeftSide />
+        <RightSide />
       </div>
     </div>
   );
